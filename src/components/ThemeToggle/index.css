@@ -1,0 +1,31 @@
+.theme_toggle {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 200;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--color-border-light);
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  box-shadow: 0 2px 12px var(--color-shadow-sm);
+  transition: background 0.15s, color 0.25s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.theme_toggle:hover {
+  background: var(--color-hover);
+  color: var(--color-text);
+  border-color: var(--color-border);
+  box-shadow: 0 4px 16px var(--color-shadow-lg);
+}
+
+.theme_toggle svg {
+  width: 20px;
+  height: 20px;
+}
